@@ -1,18 +1,16 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
-    color: #2c3e50;
+    color: black;
     line-height: 1.6;
 }
 
 .header {
-    grid-area: header;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     position: relative;
@@ -82,12 +80,10 @@ body {
 .menu-dropdown ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .menu-dropdown li {
     padding: 0;
-    margin: 0;
 }
 
 .menu-dropdown a {
@@ -107,7 +103,6 @@ body {
 }
 
 .content {
-    grid-area: main;
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 40px;
@@ -159,7 +154,6 @@ body {
 }
 
 .footer {
-    grid-area: footer;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     text-align: center;
