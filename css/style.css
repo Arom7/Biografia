@@ -3,16 +3,23 @@
     margin: 0;
 }
 
+:root {
+    --primary-bg-color : rgb(11 205 244);
+    --second-bg-color : rgb(5 94 112);
+    --background-color : rgb(15 23 42);
+    --color-text : white;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    color: black;
+    background-color: var(--background-color);
+    color: var(--color-text);
     line-height: 1.6;
 }
 
 .header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(100deg, var(--primary-bg-color) 0%, var(--second-bg-color) 100%);
+    color: var(--color-text);
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -108,31 +115,13 @@ body {
     padding: 50px 40px;
 }
 
-.content h3 {
-    font-size: 26px;
-    color: #667eea;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #667eea;
-    font-weight: 600;
-}
-
 .content h3:first-child {
     margin-top: 0;
 }
 
-.content h4 {
-    font-size: 18px;
-    color: #764ba2;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
 .content p {
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: var(--color-text);
     text-align: justify;
     line-height: 1.8;
 }
@@ -154,27 +143,142 @@ body {
 }
 
 .footer {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-bg-color) 0%, var(--second-bg-color) 100%);
+    color: var(--color-text);
     text-align: center;
     padding: 40px;
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.footer p {
-    margin: 15px 0;
-    font-size: 15px;
-    line-height: 1.6;
-}
-
 .footer a {
-    color: #ffd700;
+    color: var(--color-text);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
-.footer a:hover {
-    color: white;
-    text-decoration: underline;
+.stack-section {
+    margin-top: 30px;
+}
+
+.stack-block {
+    margin-bottom: 28px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(11, 205, 244, 0.18);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.stack-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.stack-icon {
+    width: 58px;
+    height: 58px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(11, 205, 244, 0.1);
+    border: 1px solid rgba(11, 205, 244, 0.28);
+    border-radius: 18px;
+}
+
+.stack-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.stack-header h3 {
+    margin: 0;
+    color: var(--color-text);
+    font-size: 24px;
+}
+
+.stack-description {
+    margin-bottom: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.backend-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.backend-tool {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 220px;
+    padding: 14px 16px;
+    background: rgba(5, 94, 112, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+}
+
+.backend-tool img {
+    width: 30px;
+    height: 30px;
+}
+
+.backend-tool strong,
+.backend-tool span {
+    display: block;
+}
+
+.backend-tool strong {
+    color: var(--color-text);
+}
+
+.backend-tool span {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 14px;
+}
+
+/*
+    Modificacion
+*/
+
+.subtitle{
+    color: var(--primary-bg-color);
+}
+
+span {
+    color: var(--primary-bg-color);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.container div {
+    margin: 0;
+    padding: 0;
+    border: var(--primary-bg-color) 0.5px solid;
+    border-radius: 30% ;
+}
+
+.container h3 {
+    margin: 0;
+}
+
+.container-footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-footer div {
+    margin: 0;
+    padding: 0;
 }
