@@ -18,33 +18,32 @@
         <nav class="menu-dropdown" id="menuDropdown">
             <ul>
                 <li><a href="#mi-perfil">Mi Perfil</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#myStack">Stack</a></li>
                 <li><a href="#lista-herramientas">Lista de herramientas</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="content">
-        <h3 id="mi-perfil">Mi Perfil</h3>
-        <p>
-            Tecnico Superior en Informática Industrial de la Fundación Infocal y estudiante de
-            la UMSS de octavo semestre. Durante mi formación adquirí experiencia en el desarrollo web
-            utilizando Laravel, Spring Boot y Golang aplicando arquitecturas modernas
-            como API Rest. Me considero una persona proactiva y comprometida con habilidades tanto en 
-            programacion como en la resolucion de problemas.
-        </p>
-        
-        <h3 id="habilidades">Habilidades</h3>
-        <ul> 
-            <li>Autodidacta</li>
-            <li>Responsabilidad</li>
-            <li>Resolucion de decisiones</li>
-            <li>Toma de decisiones</li>
-        </ul>
+        <section class="perfil-section">
+            <div>
+                <h2 id="mi-perfil">Mi Perfil</h2>
+                <p>
+                    Tecnico Superior en Informática Industrial de la Fundación Infocal y estudiante de
+                    la UMSS. Durante mi formación adquirí experiencia en el desarrollo web
+                    utilizando Laravel, Spring Boot y Golang aplicando buenas practicas en desarrollo de backend.
+                    Me considero una persona proactiva y comprometida con habilidades tanto en 
+                    programacion como en la resolucion de problemas.
+                </p>
+            </div>
+            <div>
+                <img src="images/imagenPersonal.png" width="400px" alt="Imagen Personal" loading="lazy">
+            </div>
+        </section>
 
         <section class="stack-section">
             <header>
-                <h2 class="subtitle">Mi Stack</h2>
+                <h2 class="subtitle" id="myStack">Mi Stack</h2>
                 <p>
                     <span> Tecnologias que utilice </span> 
                     en algunos proyectos, algunas con mayor dominion que otras.
@@ -54,17 +53,33 @@
 
             <main>
                 <!-- Frontend -->
-                <div>
-                    <div class="container">
-                        <div>
+                <div class="stack-block">
+                    <div class="stack-header">
+                        <div class="stack-icon">
                             <img src="icons/frontend.svg" alt="icono de frontend" loading="lazy">
                         </div>
                         <h3>Frontend</h3>
                     </div>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
+
+                    <p class="stack-descriptio">
+                        He diseñado vistas basicas ademas de usar plantillas de trabajo gratuitas.
+                    </p>
+
+                    <div class="tools">
+                        <article class="tool">
+                            <img src="icons/html.svg" alt="Icono de HTML" loading="lazy">
+                            <div>
+                                <strong>HTML</strong>
+                            </div>
+                        </article>
+
+                        <article class="tool">
+                            <img src="icons/css.svg" alt="Icono de CSS" loading="lazy">
+                            <div>
+                                <strong>CSS</strong>
+                            </div>
+                        </article>
+                    </div>
                 </div>
 
                 <!-- Backend --> 
@@ -77,11 +92,11 @@
                     </div>
 
                     <p class="stack-description">
-                        Experiencia en desarrollo de APIs y logica de negocio con herramientas orientadas a aplicaciones web.
+                        He desarrollado experiencia en desarrollo de APIs y logica de negocio con las siguientes herramientas orientadas al desarrollo web.
                     </p>
 
-                    <div class="backend-tools">
-                        <article class="backend-tool">
+                    <div class="tools">
+                        <article class="tool">
                             <img src="icons/laravel.svg" alt="icono de Laravel" loading="lazy">
                             <div>
                                 <strong>Laravel</strong>
@@ -89,56 +104,92 @@
                             </div>
                         </article>
 
-                        <article class="backend-tool">
+                        <article class="tool">
                             <img src="icons/java.svg" alt="icono de Java" loading="lazy">
                             <div>
                                 <strong>Spring Boot</strong>
                                 <span>Java</span>
                             </div>
                         </article>
-                    </div>
-                </div>
 
-                <!-- Base de datos -->
-                <div>
-                    <div class="container">
-                        <div>
-                            <img src="icons/database.svg" alt="icono de base de datos" loading="lazy">
-                        </div>
-                        <h3>Gestores de base de datos</h3>
+                        <article class="tool">
+                            <img src="icons/mysql.svg" alt="icono de mysql" loading="lazy">
+                            <div>
+                                <strong>MySQL</strong>
+                            </div>
+                        </article>
+
+                        <article class="tool">
+                            <img src="icons/postgresql.svg" alt="icono de postgresql" loading="lazy">
+                            <div>
+                                <strong>PostgreSQL</strong>
+                            </div>
+                        </article>
+
                     </div>
-                    <ul>
-                        <li>Maria DB</li>
-                        <li>Mysql</li>
-                        <li>PostgreSQL</li>
-                    </ul>
                 </div>
 
                 <!-- Herramientas -->
-                <div>
-                    <div class="container">
-                        <div>
+                <div class="stack-block">
+                    <div class="stack-header">
+                        <div class="stack-icon">
                             <img src="icons/settings.svg" alt="icono de herramientas" loading="lazy">
                         </div>
-                        <h3>Herramientas</h3>
+                        <h3>Herramientas de desarrollo</h3>
                     </div>
-                    <ul>
-                        <li>Postman</li>
-                        <li>GitHub</li>
-                        <li>Jira</li>
-                        <li>Claude AI</li>
-                        <li>ChatGPT</li>
-                        <li>Copilot GitHub</li>
-                        <li>Gemini</li>
-                    </ul>
+
+                    <p class="stack-description">
+                        Incluyen entornos de desarrollo (IDEs), sistemas de control de versiones y material para optimizar el flujo de trabajo y colaboracion
+                    </p>
+
+                    <div class="tools">
+                        <article class="tool">
+                            <img src="icons/postman.svg" alt="icono de postman" loading="lazy">
+                            <div>
+                                <strong>Postman</strong>
+                            </div>
+                        </article>
+
+                        <article class="tool">
+                            <img src="icons/github.svg" alt="icono github" loading="lazy">
+                            <div>
+                                <strong>GitHub</strong>
+                            </div>
+                        </article>
+
+                        <article class="tool">
+                            <img src="icons/git.svg" alt="icono git" loading="lazy">
+                            <div>
+                                <strong>Git</strong>
+                            </div>
+                        </article>
+
+                        <article class="tool">
+                            <img src="icons/jira.svg" alt="icono jira" loading="lazy">
+                            <div>
+                                <strong>Jira</strong>
+                            </div>
+                        </article>
+
+                        <article class="tool">
+                            <img src="icons/vite.svg" alt="icono vite" loading="lazy">
+                            <div>
+                                <strong>Vite</strong>
+                            </div>
+                        </article>
+
+                        <article class="tool">
+                            <img src="icons/chatgpt.svg" alt="icono ChatGPT" loading="lazy">
+                            <div>
+                                <strong>Herramienta AI</strong>
+                                <span>Copilot GitHub (VS)</span>
+                                <span>Gemini (Antigravity)</span>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </main>
-
-            <div>
-
-            </div>
         </section>
-        
     </div>
 
     <footer class="footer">
